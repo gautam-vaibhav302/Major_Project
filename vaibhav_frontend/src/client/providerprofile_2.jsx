@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Container, Form, Button, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Camera, Upload } from 'lucide-react';
+import { Camera, Upload, User } from 'lucide-react';
+import "../css/profile.css"
 
 function PProf() {
   const ae = localStorage.getItem("a_email");
@@ -21,9 +22,9 @@ function PProf() {
   const [t, st] = useState(false);
   const [validated, setValidated] = useState(false);
 
-  useEffect(() => {
-    fetchdetails();
-  }, []);
+  // useEffect(() => {
+  //   fetchdetails();
+  // }, []);
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -94,25 +95,40 @@ function PProf() {
   }
 
   return (
-    <Container className="py-5" style={{ maxWidth: '800px' }}>
-      <div className="text-center mb-4">
-        <h2 className="mb-4">Provider Profile</h2>
+    <Container className="py-3" style={{ maxWidth: '800px' }}>
+      <div className="text-center mb-5">
+        <h2 className="display-4 mb-4" style={{ 
+          background: 'linear-gradient(135deg, #6366F1, #818CF8)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          fontWeight: 'bold',
+          marginTop: '-20px'
+        }}>
+          Provider Profile
+        </h2>
       </div>
       
-      <Form noValidate validated={validated} onSubmit={handleSubmit} className="bg-white p-4 rounded-3 shadow-sm">
+      <Form noValidate validated={validated} onSubmit={handleSubmit} className="form_container p-4 rounded-3">
         {/* Profile Picture Section */}
         <div className="text-center mb-5">
           <div className="position-relative d-inline-block">
-            <Image
-              src={obj.pprev || '/placeholder.svg?height=120&width=120'}
-              alt="Profile Picture"
-              roundedCircle
-              className="mb-3"
-              style={{ width: '120px', height: '120px', objectFit: 'cover' }}
-            />
+            {obj.pprev ? (
+              <Image
+                src={obj.pprev}
+                alt="Profile Picture"
+                roundedCircle
+                className="mb-3"
+                style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+              />
+            ) : (
+              <div className="d-flex justify-content-center align-items-center bg-light rounded-circle mb-3"
+                style={{ width: '150px', height: '150px' }}>
+                <User size={80} className="text-gray-400" />
+              </div>
+            )}
             <div className="position-absolute bottom-0 end-0">
-              <label className="btn btn-light rounded-circle p-2 shadow-sm" style={{ cursor: 'pointer' }}>
-                <Camera size={20} />
+              <label className="btn btn-primary rounded-circle p-2 shadow-sm" style={{ cursor: 'pointer' }}>
+                <Camera size={20} className="text-white" />
                 <input
                   type="file"
                   onChange={pic}
