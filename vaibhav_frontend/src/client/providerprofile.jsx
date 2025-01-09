@@ -26,7 +26,7 @@ function Save() {
    useEffect(()=>{ 
      console.log("object:" + JSON.stringify(obj));
   
-      fetchdetails();
+      // fetchdetails();
   },[])
   
   const handleSubmit = (event) => {

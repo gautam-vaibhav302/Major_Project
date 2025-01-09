@@ -28,6 +28,11 @@ function App() {
         <Route path="/pdash_new" element={<PdashNew/>}></Route>
         <Route path="/pdash_new2" element={<PdashNew2 />}>
           <Route path="/pdash_new2/" element={<Welcome/>}></Route>
+          <Route path="/pdash_new2/pprof" element={<PProf/>}></Route>
+          <Route path="/pdash_new2/parking" element={<Park/>}></Route>
+          <Route path="/pdash_new2/bookslot" element={<Book/>}></Route>
+          <Route path="/pdash_new2/freeslot" element={<Free/>}></Route>
+          <Route path="/pdash_new2/viewpark" element={<Welcome/>}></Route>
         </Route>
         <Route path="/cdash" element={<Cdash/>}></Route>
         <Route path="/pprof" element={<PProf/>}></Route>

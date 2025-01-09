@@ -43,11 +43,11 @@ function DashboardLayout2 () {
 
   const navItems = [
     { name: 'Dashboard', icon: Home, path: '' },
-    { name: 'Profile', icon: Users, path: '/pprof' },
-    { name: 'Add/Edit Parking', icon: Folder, path: '/parking' },
-    { name: 'Fill Slots', icon: Calendar, path: '/bookslot' },
-    { name: 'Free Slots', icon: FileText, path: '/freeslot' },
-    { name: 'View Parking', icon: PieChart, path: '/sclient' },
+    { name: 'Profile', icon: Users, path: '/pdash_new2/pprof' },
+    { name: 'Add/Edit Parking', icon: Folder, path: '/pdash_new2/parking' },
+    { name: 'Fill Slots', icon: Calendar, path: '/pdash_new2/bookslot' },
+    { name: 'Free Slots', icon: FileText, path: '/pdash_new2/freeslot' },
+    { name: 'View Parking', icon: PieChart, path: '' },
   ];
 
   const SidebarContent = () => (
