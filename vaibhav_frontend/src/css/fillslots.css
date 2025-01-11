@@ -4,15 +4,6 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.form_container {
-  box-shadow: 5px 5px 10px 5px rgb(77 81 245 / 58%);
-  background: rgb(247 247 255);
-}
-
-.background_tint{
-  background: rgb(235 234 255);
-}
-
 @media (min-width: 768px) {
   .display-4 {
     font-size: 3rem;
@@ -32,6 +23,8 @@
   font-weight: 500;
   color: #4B5563;
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .btn-primary {
@@ -43,18 +36,6 @@
 .btn-primary:hover {
   background-color: #4F46E5;
   border-color: #4F46E5;
-}
-
-.btn-outline-secondary {
-  color: #6B7280;
-  border-color: #6B7280;
-  padding: 0.75rem 1.5rem;
-}
-
-.btn-outline-secondary:hover {
-  background-color: #6B7280;
-  border-color: #6B7280;
-  color: white;
 }
 
 .card {
@@ -85,4 +66,23 @@
 
 .form-control:hover {
   border-color: #D1D5DB;
+}
+
+@media (max-width: 991.98px) {
+  .col-lg-4 {
+    margin-top: 2rem;
+  }
+}
+
+.form_container {
+  box-shadow: 5px 5px 10px 5px rgb(77 81 245 / 58%);
+  background: rgb(247 247 255);
+}
+
+.background_tint{
+  background: rgb(235 234 255);
+}
+
+.background_tint_2{
+  background: rgb(247 247 255);
 }
