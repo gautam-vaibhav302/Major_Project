@@ -7,7 +7,8 @@ import Login from "./entry/login";
 import Pdash from "./entry/pdash";
 import Cdash from "./entry/cdash";
 import Free from "./client/freeslot_2";
-import PProf from "./client/providerprofile_2";
+import PProf2 from "./client/providerprofile_2";
+import PProf from "./client/providerprofile";
 import Park from "./client/addparking_2";
 import Book from "./client/fillslots_2";
 import Cprof from "./client/clientprofile";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/pdash_new2" element={<PdashNew2 />}>
           <Route path="/pdash_new2/" element={<Welcome/>}></Route>
           <Route path="/pdash_new2/pprof" element={<PProf/>}></Route>
+          <Route path="/pdash_new2/pprof2" element={<PProf2/>}></Route>
           <Route path="/pdash_new2/parking" element={<Park/>}></Route>
           <Route path="/pdash_new2/bookslot" element={<Book/>}></Route>
           <Route path="/pdash_new2/freeslot" element={<Free/>}></Route>

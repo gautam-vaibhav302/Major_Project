@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Camera, Upload, User } from 'lucide-react';
 import "../css/profile.css"
 
-function PProf() {
+function PProf2() {
   const ae = localStorage.getItem("a_email");
   const navigate = useNavigate();
 
@@ -108,7 +108,7 @@ function PProf() {
         </h2>
       </div>
       
-      <Form noValidate validated={validated} onSubmit={handleSubmit} className="form_container p-4 rounded-3">
+      <Form noValidate validated={validated} onSubmit={handleSubmit} className="shadow-sm p-4 rounded-3">
         {/* Profile Picture Section */}
         <div className="text-center mb-5">
           <div className="position-relative d-inline-block">
@@ -257,5 +257,5 @@ function PProf() {
   );
 }
 
-export default PProf;
+export default PProf2;
 
