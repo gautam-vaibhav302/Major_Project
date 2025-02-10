@@ -32,7 +32,7 @@ class ImageProcessView(APIView):
 
         resp_obj = {"message": "Image processed successfully", "extracted_text": extracted_text}
 
-        resp = JsonResponse(status=True)
+        resp = JsonResponse(resp_obj,status=status.HTTP_200_OK)
 
         print("\n The content of the response is : ", resp.content)
 
