@@ -17,6 +17,7 @@ import PdashNew from "./entry/pdash_new";
 import PdashNew2 from "./entry/pdash_new2";
 import DashboardLayout2 from "./owner_dasboard/dasboardLayout2";
 import Welcome from "./owner_dasboard/pages/welcome";
+import ViewParking from "./client/viewpark";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="/pdash_new2/parking" element={<Park/>}></Route>
           <Route path="/pdash_new2/bookslot" element={<Book/>}></Route>
           <Route path="/pdash_new2/freeslot" element={<Free/>}></Route>
-          <Route path="/pdash_new2/viewpark" element={<Welcome/>}></Route>
+          <Route path="/pdash_new2/viewpark" element={<ViewParking/>}></Route>
         </Route>
         <Route path="/cdash" element={<Cdash/>}></Route>
         <Route path="/pprof" element={<PProf/>}></Route>

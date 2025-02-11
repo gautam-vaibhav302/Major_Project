@@ -47,7 +47,7 @@ function DashboardLayout2 () {
     { name: 'Add/Edit Parking', icon: Folder, path: '/pdash_new2/parking' },
     { name: 'Fill Slots', icon: Calendar, path: '/pdash_new2/bookslot' },
     { name: 'Free Slots', icon: FileText, path: '/pdash_new2/freeslot' },
-    { name: 'View Parking', icon: PieChart, path: '' },
+    { name: 'View Parking', icon: PieChart, path: '/pdash_new2/viewpark' },
   ];
 
   const SidebarContent = () => (
